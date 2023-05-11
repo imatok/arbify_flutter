@@ -13,7 +13,7 @@ dependencies:
   dio: ^5.1.2
   flutter:
     sdk: flutter
-  intl: ^0.18.1
+  intl: ^0.18.0
   intl_utils: ^2.1.0
   path: ^1.8.0
   petitparser: ^5.0.0
