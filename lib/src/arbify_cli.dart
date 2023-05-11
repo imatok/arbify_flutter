@@ -94,7 +94,7 @@ class ArbifyCli {
       await Generator().generateAsync();
       stdout.write('done\n');
     } on DioError catch (e) {
-      if (e.type == DioErrorType.response) {
+      if (e.type == DioErrorType.badResponse) {
         if (e.response?.statusCode == 403) {
           PrintInstructions.apiForbidden(projectId);
         } else if (e.response?.statusCode == 404) {
